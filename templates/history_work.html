@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <thead>
+            <th>日期</th>
+            <th>计划工作内容</th>
+            <th>完成情况</th>
+            <th>遇到的困难</th>
+            <th>领导评语</th>
+        </thead>
+        <tbody>
+            {% for plan in works %}
+            <tr>
+                <td>{{ plan.date }}</td>
+                <td>{{ plan.content }}</td>
+                <td>{{ plan.schedule }}</td>
+                <td>{{ plan.problem }}</td>
+                <td>{{ plan.comment }}</td>
+            </tr>
+            {% empty %}
+                <p style="size: auto">空空如何</p>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

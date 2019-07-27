@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="/common_static/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills">
+                    <li><a href="">welcome, {{ user }}</a> </li>
+                    <li><a href="homePage.html">首页</a> </li>
+                    <li><a href="today_work.html">今日工作计划</a></li>
+                    <li><a href="/history/"> 历史工作计划</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        个人绩效查询 <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""> 历史加班数</a></li>
+                            <li><a href="">季度绩效</a> </li>
+                            <li><a href=""> 将来绩效目标</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        员工工作考核 <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""> 历史加班数</a></li>
+                            <li><a href="">季度绩效</a> </li>
+                            <li><a href=""> 将来绩效目标</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- quote jquery-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- quote bootstrap-->
+    <script href="/common_static/js/bootstrap.min.js"></script>
+</body>
+</html>
